@@ -1,4 +1,4 @@
-package com.ppsdevelopment.tmcprocessor.tmctypeslib;
+package com.ppsdevelopment.tmctypeslib;
 
 public class FieldRecord {
     private String header;
@@ -36,11 +36,11 @@ public class FieldRecord {
         return fieldType;
     }
 
-    public com.ppsdevelopment.tmcprocessor.tmctypeslib.FieldType getFff() {
+    public com.ppsdevelopment.tmctypeslib.FieldType getFff() {
         return fff;
     }
 
-    public void setFff(com.ppsdevelopment.tmcprocessor.tmctypeslib.FieldType fff) {
+    public void setFff(com.ppsdevelopment.tmctypeslib.FieldType fff) {
         this.fff = fff;
     }
 

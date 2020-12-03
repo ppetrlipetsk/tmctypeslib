@@ -1,4 +1,4 @@
-package com.ppsdevelopment.tmcprocessor.tmctypeslib;
+package com.ppsdevelopment.tmctypeslib;
 
 public enum FieldType{
     INTTYPE, BIGINTTYPE, STRINGTYPE, DECIMALTYPE, DATETYPE, FLOATTYPE, LONGSTRINGTYPE;

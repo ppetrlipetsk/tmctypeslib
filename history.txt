@@ -1,2 +1,11 @@
 Version 1.0.2
 - fields getter and setter added
+
+Version 1.1.0-SNAPSHOT
+- added public static String getFieldDBStrByType(FieldType t) to FieldTypeDefines;
+- added public static HashMap<FieldType, String> getTypesFieldDBMask() to FieldTypeDefines;
+
+Version 1.2.0.8-SNAPSHOT
+- (private static Properties getProperties(String fileName) throws IOException) description IOError maked.
+Version 1.2.0.8.1-SNAPSHOT
+- public static String getDefaultValueForType(Class<?> t) - added

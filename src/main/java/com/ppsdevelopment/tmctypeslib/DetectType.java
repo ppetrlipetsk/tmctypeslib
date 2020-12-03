@@ -1,4 +1,4 @@
-package com.ppsdevelopment.tmcprocessor.tmctypeslib;
+package com.ppsdevelopment.tmctypeslib;
 
 public class DetectType {
 

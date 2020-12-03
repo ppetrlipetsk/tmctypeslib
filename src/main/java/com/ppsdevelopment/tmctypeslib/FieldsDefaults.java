@@ -1,4 +1,4 @@
-package com.ppsdevelopment.tmcprocessor.tmctypeslib;
+package com.ppsdevelopment.tmctypeslib;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -45,7 +45,12 @@ public class FieldsDefaults {
 
     private static Properties getProperties(String fileName) throws IOException {
         Properties properties = new Properties();
-        properties.load(new FileInputStream(fileName));
+        try {
+            properties.load(new FileInputStream(fileName));
+        }
+        catch (IOException e){
+            throw new IOException(e.getMessage()+" file:"+fileName);
+        }
         return properties;
     }
 

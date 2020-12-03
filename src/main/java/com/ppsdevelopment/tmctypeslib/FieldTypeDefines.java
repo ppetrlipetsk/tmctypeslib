@@ -1,5 +1,7 @@
-package com.ppsdevelopment.tmcprocessor.tmctypeslib;
+package com.ppsdevelopment.tmctypeslib;
 
+import javax.xml.crypto.Data;
+import java.util.Date;
 import java.util.HashMap;
 
 /**
@@ -79,6 +81,23 @@ public class FieldTypeDefines {
         return fieldTypeDefaultValue.get(t);
     }
 
+    /**
+     * Возвращает значение по умолчанию для поля заданного класса
+     * @param t - класс поля
+     * @return - значение по умолчанию для поля заданного типа
+     */
+    public static String getDefaultValueForType(Class<?> t){
+            if ((t == Float.class)||(t==Double.class)||(t==Integer.class)||(t==Long.class)) {
+                 return "0";
+            }
+            else
+            if ((t== Date.class)||(java.sql.Date.class==t)) {
+                    return "01.01.1900";
+            }
+            else
+            return "";
+    }
+
 
     /**
      * Возвращает приоритет типа поля.
@@ -87,5 +106,19 @@ public class FieldTypeDefines {
     public static HashMap<FieldType, Integer> getFieldTypePriority() {
         return fieldTypePriority;
     }
+
+
+    /**
+     *
+     * @return
+     */
+    public static HashMap<FieldType, String> getTypesFieldDBMask() {
+        return fieldTypeStr;
+    }
+
+    public static String getFieldDBStrByType(FieldType t){
+        return fieldTypeStr.get(t);
+    }
+
 
 }

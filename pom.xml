@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ppsdevelopment</groupId>
     <artifactId>com.ppsdevelopment.tmctypeslib</artifactId>
-    <version>1.2.0.8-SNAPSHOT</version>
+    <version>1.2.0.8.5-SNAPSHOT</version>
         <properties>
 <!--
             <maven.compiler.release>8</maven.compiler.release>

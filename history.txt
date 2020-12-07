@@ -9,3 +9,17 @@ Version 1.2.0.8-SNAPSHOT
 - (private static Properties getProperties(String fileName) throws IOException) description IOError maked.
 Version 1.2.0.8.1-SNAPSHOT
 - public static String getDefaultValueForType(Class<?> t) - added
+
+Version 1.2.0.8.2-SNAPSHOT
+ DetectType class:
+ public static boolean isSQLDate(String string) added
+ public static boolean isIntDate(String string) added
+
+ Version 1.2.0.8.3-SNAPSHOT
+ DataType enum added
+
+ 1.2.0.8.3-SNAPSHOT
+ DetectType changed. Added date recognition in sql format
+
+ 1.2.0.8.5
+ DetectType changed. Added public boolean validateValue(FieldType fieldType, String val) throws Exception.

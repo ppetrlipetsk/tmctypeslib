@@ -7,6 +7,7 @@ public class DetectType {
     static String INT_REG="^-?\\+?\\d+?$";
     static String DATE_REG="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d";
     static String DATE_REG_EN="^([1-9]|1[012])[- /.]([1-9]|[12][0-9]|3[01]){1,2}[- /.](19|20){0,1}(\\d\\d){0,1}$";
+    static String DATE_REG_SQL="(19|20)\\d\\d[-/.](0[1-9]|1[012])[-/.](0[1-9]|[12][0-9]|3[01])";
     static String STRINGINT_REG="^0\\d+$"; // Строковый тип, но состоит из цифр, начинается с "0"
 
 
@@ -36,6 +37,17 @@ public class DetectType {
         return string.matches(DATE_REG)||string.matches(DATE_REG_EN);
     }
 
+    public static boolean isSQLDate(String string) {
+        if (string == null) return false;
+        return string.matches(DATE_REG_SQL);
+    }
+
+    public static boolean isIntDate(String string) {
+        if (string == null) return false;
+        return string.matches(DATE_REG);
+    }
+
+
     public static boolean isDateEn(String string) {
         if (string == null) return false;
         return string.matches(DATE_REG_EN);
@@ -61,5 +73,13 @@ public class DetectType {
                 return FieldType.STRINGTYPE;
         else
                 return FieldType.LONGSTRINGTYPE;
+    }
+
+    public boolean validateValue(FieldType fieldType, String val) throws Exception {
+        return (((fieldType == FieldType.FLOATTYPE) && !(DetectType.isRealNumber(val)))) ||
+               (((fieldType == FieldType.DATETYPE) && (!DetectType.isDate(val)))) ||
+               (((fieldType == FieldType.INTTYPE) && (!DetectType.isInt(val))))||
+               (((fieldType == FieldType.BIGINTTYPE) && (!DetectType.isInt(val))))||
+               (((fieldType == FieldType.DECIMALTYPE) && (!DetectType.isRealNumber(val))));
     }
 }

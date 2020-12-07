@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a0bb8d7-129e-4683-9861-64066c7ec6f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmctypeslib/DateFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/history.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmcprocessor/tmctypeslib/DetectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmctypeslib/DetectType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmcprocessor/tmctypeslib/FieldRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmctypeslib/FieldRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmcprocessor/tmctypeslib/FieldType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmctypeslib/FieldType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmcprocessor/tmctypeslib/FieldTypeDefines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmctypeslib/FieldTypeDefines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmcprocessor/tmctypeslib/FieldsCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmctypeslib/FieldsCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmcprocessor/tmctypeslib/FieldsDefaults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmctypeslib/FieldsDefaults.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmctypeslib/DetectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/tmctypeslib/DetectType.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +14,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1dRK5OHN0uB3YwOBWsYKPeWHoWx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -65,7 +74,9 @@
       <workItem from="1592915509279" duration="1507000" />
       <workItem from="1593174804344" duration="1764000" />
       <workItem from="1606728919830" duration="1688000" />
-      <workItem from="1606993666344" duration="1176000" />
+      <workItem from="1606993666344" duration="1825000" />
+      <workItem from="1607001200424" duration="2742000" />
+      <workItem from="1607340280380" duration="1077000" />
     </task>
     <servers />
   </component>
